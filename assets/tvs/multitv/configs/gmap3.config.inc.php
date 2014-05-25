@@ -1,24 +1,23 @@
 <?php
 $settings['display'] = 'vertical';
 $settings['fields'] = array(
+    'latLng' => array(
+        'caption' => 'LatLong',
+        'type' => 'text'
+    ),
     'address' => array(
         'caption' => 'Address',
         'type' => 'text'
     ),
     'data' => array(
-        'caption' => 'Data',
+        'caption' => 'Popup balloon text',
         'type' => 'textarea'
     ),
 
     'icon' => array(
-        'caption' => 'Icon',
+        'caption' => 'Custom Icon',
         'type' => 'image'
-    ),
-    'iconprev' => array(
-        'caption' => 'Icon preview',
-        'type' => 'thumb',
-        'thumbof' => 'icon'
-    ),
+    )
 );
 $settings['templates'] = array(
     'outerTpl' => '    <script type="text/javascript">
@@ -62,7 +61,7 @@ $settings['templates'] = array(
         });
       });</script>
        <div id="gmap3TV" class="gmap3"></div>',
-    'rowTpl' => '{address:"[+address+]", data:"[+data+]", options:{icon: "[+icon+]"}},'
+    'rowTpl' => '{[+latLng:ne=``:then=`latLng:[[+latLng+]]`:else=`address:"[+address+]"`+], data:"[+data+]" [+icon:ne=``:then=`, options:{icon: "[+icon+]"}`+]},'
 );
 $settings['configuration'] = array(
     'enablePaste' => true,
