@@ -3,6 +3,7 @@
  *
  * gmap3TV
  *
+ * @author      tattoocms.it 
  * @category	tv
  * @internal	@modx_category MultiTV add-ons
  * @internal    @caption gmap3TV
