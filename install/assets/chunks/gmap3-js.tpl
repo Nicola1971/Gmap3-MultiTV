@@ -3,6 +3,7 @@
  *
  * include js and css for gmap3 multitv
  *
+ * @author      tattoocms.it
  * @category	chunk
  * @version 	1.0
  * @license 	http://www.gnu.org/copyleft/gpl.html GNU Public License (GPL)
@@ -21,8 +22,8 @@
       .gmap3{
         margin: 20px auto;
         border: 1px dashed #C0C0C0;
-        width: 500px;
-        height: 500px;
+        width: 100%;
+        height: 450px;
       }
 		.gmap3 img {
     max-width: none;
