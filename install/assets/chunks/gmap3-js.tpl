@@ -12,18 +12,15 @@
  * @internal    @overwrite true
  */
 
-<!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
 <script type="text/javascript" src="/assets/templates/common/js/gmap3/gmap3.js"></script>
     <style>
-      body{
-        text-align:center;
-      }
       .gmap3{
         margin: 20px auto;
         border: 1px dashed #C0C0C0;
-        width: 100%;
-        height: 450px;
+        width:100%;
+        height: 500px;
       }
 		.gmap3 img {
     max-width: none;
