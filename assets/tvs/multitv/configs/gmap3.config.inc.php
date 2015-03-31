@@ -58,8 +58,9 @@ jQuery(document).ready(function($){
     }
   }
     }
-  }
-        }, "autofit");
+  },
+    autofit:{maxZoom: 14}
+        });
       });</script>
        <div id="gmap3TV" class="gmap3"></div>',
     'rowTpl' => '{[+latLng:ne=``:then=`latLng:[[+latLng+]]`:else=`address:"[+address+]"`+], data:"[+data+]" [+icon:ne=``:then=`, options:{icon: "[+icon+]"}`+]},'
