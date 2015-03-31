@@ -16,8 +16,7 @@ $settings['fields'] = array(
 
     'icon' => array(
         'caption' => 'Custom Icon',
-        'type' => 'image',
-        'default' => 'assets/images/map-markers/red.png'
+        'type' => 'image'
     )
 );
 $settings['templates'] = array(
