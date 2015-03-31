@@ -22,13 +22,9 @@ $settings['fields'] = array(
 $settings['templates'] = array(
     'outerTpl' => '    <script type="text/javascript">
 
-      $(function(){
+jQuery(document).ready(function($){
       $("#gmap3TV").gmap3({
-  map:{
-    options:{
-      zoom: 5
-    }
-  },
+
   marker:{
     values:[[+wrapper+] ],
     options:{
@@ -55,10 +51,15 @@ $settings['templates'] = array(
         if (infowindow){
           infowindow.close();
         }
-      }
+      },
+      map:{
+    options:{
+    //  zoom: 5
     }
   }
-        });
+    }
+  }
+        }, "autofit");
       });</script>
        <div id="gmap3TV" class="gmap3"></div>',
     'rowTpl' => '{[+latLng:ne=``:then=`latLng:[[+latLng+]]`:else=`address:"[+address+]"`+], data:"[+data+]" [+icon:ne=``:then=`, options:{icon: "[+icon+]"}`+]},'
